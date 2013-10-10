@@ -1,0 +1,27 @@
+{
+  "name": "rpc-stream",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+    "nodeunit": "~0.8.1"
+  },
+  "scripts": {
+    "test": "./node_modules/nodeunit/bin/nodeunit test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bornholm/rpc-stream.git"
+  },
+  "author": "",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/Bornholm/rpc-stream/issues"
+  }
+}

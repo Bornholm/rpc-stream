@@ -30,7 +30,7 @@ var tcpServer = net.createServer(function(connection) {
     .pipe(connection);
 
   console.log('Calling "divide" on client', connection.remoteAddress);
-  rpcEndpoint.call('divide', [5, 3], function(err, result) {
+  rpcEndpoint.call('divide', 5, 3, function(err, result) {
     console.log('From client', connection.remoteAddress, 'divide() ->', result);
   });
 

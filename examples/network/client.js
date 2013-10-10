@@ -21,13 +21,13 @@ tcpClient
   .pipe(tcpClient);
 
 console.log('Calling "add" on server', tcpClient.remoteAddress);
-rpcEndpoint.call('add', [5, 6], function(err, result) {
+rpcEndpoint.call('add', 5, 6, function(err, result) {
   console.log('From server', tcpClient.remoteAddress, 'add() ->', result);
 });
 
 setInterval(function() {
   console.log('Calling "getDate" on server', tcpClient.remoteAddress);
-  rpcEndpoint.call('getDate', [], function(err, result) {
+  rpcEndpoint.call('getDate', function(err, result) {
     console.log('From server', tcpClient.remoteAddress, 'getDate() ->', result);
   });
 }, 3000)
