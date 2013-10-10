@@ -30,4 +30,4 @@ setInterval(function() {
   rpcEndpoint.call('getDate', function(err, result) {
     console.log('From server', tcpClient.remoteAddress, 'getDate() ->', result);
   });
-}, 3000)
+}, 2000)
